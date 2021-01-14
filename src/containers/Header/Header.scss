@@ -1,7 +1,30 @@
-#app-header{
-    height: 64px;
-    padding: 0 80px;
-    background: #000;/*Պայմանական*/
+.app-header {
+    top: 0;
+    left: 0;
     position: fixed;
-    width: 100%;
+    font-family: "Mardoto-Regular",Fallback,sans-serif;
+    height: 80px;
+    width: 100vw;
+    padding: 0 180px;
+    transition: background-color .2s ease-in-out;
+    z-index: 100;
+    background: aqua;
+}
+
+@media (max-width: 1600px) {
+    .app-header {
+        height: 64px;
+        padding: 0 80px;
+    }
+}
+
+.app-header--scrolled {
+    background-color: #fff;
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+.app-header, .app-header__right-column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
