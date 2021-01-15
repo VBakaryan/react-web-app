@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Product from '../../component/Product/Product'
+import Product from '../../components/Product/Product'
 import productsData from '../../data-mockup/products-mockup'
 
 import './Products.scss';

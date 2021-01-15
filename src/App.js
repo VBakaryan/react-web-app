@@ -1,9 +1,9 @@
-import './App.css';
-import Layout from './component/Layout/Layout';
-
+import Layout from './components/Layout/Layout';
 import Footer from './containers/Footer/Footer';
 import Header from './containers/Header/Header';
 import Products from './containers/Products/Products';
+
+import './App.scss';
 
 function App() {
   return (

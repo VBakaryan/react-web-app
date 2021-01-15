@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Layout.css'
+import './Layout.scss'
 
 function Layout({children}){
     return <div id="app-layout">
