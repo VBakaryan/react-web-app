@@ -1,0 +1,38 @@
+.product-block{
+    width:256px;
+}
+.product-block-img{
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.product-block-img img{
+    width: 100%;
+}
+.product-block h1{
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.product-block-hover{
+    transition: bottom .2s;
+    position: absolute;
+    z-index: 1;
+    height: 64px;
+    bottom: -64px;
+    width: 100%;
+    background-color: rgba(136,132,132,.7);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.product-block-img:hover .product-block-hover{
+    bottom: 0;
+}
+.product-block-hover p{
+    color: rgb(66, 53, 53);
+    font-size: 20px;
+    font-weight: 700;
+}
