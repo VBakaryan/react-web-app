@@ -2,6 +2,7 @@
     background: red;
     display: flex;
     height: 600px;
+    padding-top: 64px;
 }
 #app-main{
     flex: 1;
