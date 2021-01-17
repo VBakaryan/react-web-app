@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import './Header.scss';
 
@@ -6,20 +6,20 @@ const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
 
     const listenScrollEvent = (e) => {
-        if (window.scrollY > 400) {
+        if (window.scrollY > 100) {
             setIsScrolled(true);
         } else {
             setIsScrolled(false);
         }
     }
-    
-    const componentDidMount = () => {
-        window.addEventListener('scroll', listenScrollEvent)
-    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent);
+    }, []);
 
     return (
         <div>
-            <header id='app-header' className={isScrolled ? 'app-header--scrolled' : 'app-header'}>Initial header</header>
+            <header id='app-header' className={`app-header ${isScrolled} ? 'app-header--scrolled' : ''}`}>Initial header</header>
         </div>
     )
 }
