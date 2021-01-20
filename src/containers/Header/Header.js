@@ -1,5 +1,10 @@
 import React, {useEffect, useState} from 'react';
 
+import Button from '../../components/Button/Button';
+import HeaderComponent from '../../components/Header/HeaderComponent/HeaderComponent';
+import HeaderIcon from '../../components/Header/HeaderIcon/HeaderIcon';
+import HeaderShoppingCart from '../../components/Header/HeaderShoppingCart/HeaderShoppingCart';
+
 import './Header.scss';
 
 const Header = () => {
@@ -19,7 +24,15 @@ const Header = () => {
 
     return (
         <div>
-            <header id='app-header' className={`app-header ${isScrolled} ? 'app-header--scrolled' : ''}`}>Initial header</header>
+            <HeaderComponent isScrolled={isScrolled}>
+                <div className="app-header--icon">
+                    <HeaderIcon />
+                </div>
+                <div className="app-header--shopping-cart">
+                    <HeaderShoppingCart />
+                </div>
+                <Button className="app-header--btn"> Մուտք </Button>
+            </HeaderComponent>
         </div>
     )
 }
