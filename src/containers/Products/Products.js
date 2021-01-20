@@ -2,7 +2,6 @@ import React from 'react'
 
 import Product from '../../components/Product/Product'
 import productsData from '../../data-mockup/products-mockup'
-
 import './Products.scss';
 
 function Products() {
@@ -11,7 +10,9 @@ function Products() {
             {productsData.map(el => {
                 return <Product key={el.id} title={el.title} price={el.price} imgSrc={el.imgSrc}/>
             })}
+        
         </div>
+
     )
 }
 
