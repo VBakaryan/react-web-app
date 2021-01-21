@@ -1,15 +1,39 @@
 .app-footer {
 	color: #080808;
 	background-color: #f7eeef;
-	padding-top: 3em;
+	padding-top: 5em;
 	position: relative;
 	bottom: 0;
 	width: 100%;
+	font-family: "Mardoto-Regular",Fallback,sans-serif;
+	
 }
 .row {
 	display: flex;
+    
 
 }
 li {
 	list-style-type: none;
 }
+
+.col{
+	padding: 0 100px;
+	font-size: 24px;
+    margin-bottom: 15px;
+    
+	}
+	
+
+.list-unstyled{
+	font-size: 20px;
+    color: #10202c;
+    line-height: 32px;
+}
+
+a {
+	margin: 0 16px 0 0;
+}
+
+
+
