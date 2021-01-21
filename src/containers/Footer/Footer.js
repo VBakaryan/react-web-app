@@ -10,25 +10,25 @@ function Footer(){
           {/* Column1 */}
           <div className="col">
             <h4>Հետադարձ կապ</h4>
-            <ui className="list-unstyled">
+            <ul className="list-unstyled">
               <li>Էլ․ հասցե՝ info@boxy.am</li>
               <li>Հեռ․՝+374 41 05-11-50</li>
-              <li> </li>
-            </ui>
+            </ul>
           </div>
           {/* Column2 */}
           <div className="col">
             <h4>Սպասարկում</h4>
-            <ui className="list-unstyled">
+            <ul className="list-unstyled">
               <li>Հաճախ տրվող հարցեր</li>
               <li>Վերադարձի պայմաններ</li>
               <li>Օգտվելու կանոններ</li>
               <li>Առաքման պայմաններ</li>
-            </ui>
+            </ul>
           </div>
           {/* Column3 */}
           <div className="col">
             <h4>Գտիր մեզ սոց ցանցերում</h4>
+            <div>
             <a href="https://www.facebook.com/boxyyerevan">
              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
               <g id="Group_682" data-name="Group 682" transform="translate(747.389 3368.981)">
@@ -38,20 +38,17 @@ function Footer(){
               </g>
              </svg>
             </a>
+            </div>
             <a href="https://www.instagram.com/accounts/login/">
-              <svg >
-                
-              </svg>
-              </a>
-            <ui className="list-unstyled">
+            </a>
+            <ul className="list-unstyled">
               <li></li>
               <li></li>
               <li></li>
-            </ui>
+            </ul>
           </div>
         </div>
-        <hr />
-        <div className="row">
+        <div>
           <p className="col-sm">
             &copy;{new Date().getFullYear()} Boxy։ բոլոր իրավունքները պաշտպանված են։
           </p>
