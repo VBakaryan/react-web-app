@@ -11,13 +11,14 @@ const Landing = () => {
             <div className="app-landing--img">
                 <img src={landingImg} alt="landing-img"></img>
             </div>
-
-            <div className="app-landing--h1">
-                <h1 className="app-landing--text">
-                    Ապահովում ենք երջանկություն <br></br>և լավ տրամադրություն<br></br>
-                    բոլորին և ամենուր
-                </h1>
-                <Button className="app-landing--btn"> Ստանալ </Button>
+            <div className="app-landing-text-main">
+                <div className="app-landing--h1">
+                    <h1 className="app-landing--text">
+                        Ապահովում ենք երջանկություն <br></br>և լավ տրամադրություն<br></br>
+                        բոլորին և ամենուր
+                    </h1>
+                    <Button className="app-landing--btn"> Ստանալ </Button>
+                </div>
             </div>
         </div>
     )
