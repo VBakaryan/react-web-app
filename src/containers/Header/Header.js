@@ -1,38 +1,43 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Button from '../../components/Button/Button';
-import HeaderComponent from '../../components/Header/HeaderComponent/HeaderComponent';
-import HeaderIcon from '../../components/Header/HeaderIcon/HeaderIcon';
-import HeaderShoppingCart from '../../components/Header/HeaderShoppingCart/HeaderShoppingCart';
+import HeaderLogo from '../../assets/Icons/HeaderLogo';
+import HeaderShoppingCart from '../../assets/Icons/HeaderShoppingCart';
 
 import './Header.scss';
 
 const Header = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    const listenScrollEvent = (e) => {
-        if (window.scrollY > 100) {
-            setIsScrolled(true);
-        } else {
-            setIsScrolled(false);
+    
+    const [headerBackround, setHeaderBackround] = useState(false)
+        
+    const scrollHeader = () => {
+        if(window.scrollY > 20){
+            setHeaderBackround(true)
+        }else{
+            setHeaderBackround(false)
         }
     }
 
     useEffect(() => {
-        window.addEventListener('scroll', listenScrollEvent);
-    }, []);
+        window.addEventListener("scroll", scrollHeader)
+        return () => {
+            window.removeEventListener("scroll", scrollHeader)
+        }
+    }, [])
 
     return (
-        <div>
-            <HeaderComponent isScrolled={isScrolled}>
-                <div className="app-header--icon">
-                    <HeaderIcon />
-                </div>
-                <div className="app-header--shopping-cart">
+        <div className={`app-header${headerBackround ? ' app-header--scroll' : ''}`}>
+            <div className={`app-header__login${headerBackround ? ' app-logo--scroll' : ''}`}>
+                <HeaderLogo />
+            </div>
+            <div className="app-header__right">
+                <div className="app-header__right__shop-icon">
                     <HeaderShoppingCart />
                 </div>
-                <Button className="app-header--btn"> Մուտք </Button>
-            </HeaderComponent>
+                <Button className="app-header__right__btn">
+                    Մուտք
+                </Button>
+            </div>
         </div>
     )
 }
