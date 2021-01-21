@@ -1,0 +1,47 @@
+  .app-landing--btn {
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    margin-top: 40px;
+    padding: 16px 44px;
+    border-radius: 48px;
+    animation: btn-attention 0.5s;
+    animation-iteration-count: 6;
+    animation-delay: 2s;
+    background-color: #ff8a65;
+    text-align: center;
+    color: #333;
+    border: 1px solid transparent;
+    text-transform: none;
+    line-height: normal;
+    margin: 0;
+    vertical-align: baseline;
+    position: absolute;
+    top: 70%;
+    right: 5%;
+  }
+  
+  .app-landing--btn:hover {
+    background-color: #ff7a50;
+  }
+  
+  .app-landing--img {
+    display: flex;
+    left: 0;
+    top: 0;
+  }
+  
+  .app-landing--h1 {
+    display: inline-block;
+    text-align: right;
+    vertical-align: bottom;
+  }
+  
+  .app-landing--text {
+    color: #333;
+    font-weight: 400;
+    position: absolute;
+    left: 65%;
+    bottom: 30%;
+    font-family: "Mardoto-Regular", Fallback, sans-serif;
+  }
+  
