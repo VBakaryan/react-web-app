@@ -1,5 +1,7 @@
 import React from 'react'
 
+import instagramIcon from '../../assets/Icons/instagram.png'
+
 import './Footer.scss'
 
 function Footer(){
@@ -38,9 +40,10 @@ function Footer(){
               </g>
              </svg>
             </a>
-            </div>
-            <a href="https://www.instagram.com/accounts/login/">
+            <a href="instagram.com">
+                <img src={instagramIcon} alt="instagram-icon" className="app-footer--instagram_icon" />
             </a>
+            </div>
             <ul className="list-unstyled">
               <li></li>
               <li></li>
