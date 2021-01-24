@@ -1,9 +1,9 @@
 import React from 'react';
 
 import FooterTopLogo from "../../assets/Icons/FooterTopLogo";
-import Button from "../../components/Button/Button";
+import Button from "../Button/Button";
 
-import "./Footer.scss"
+import "./FooterTop.scss"
 
 function FooterTop(){
     return(

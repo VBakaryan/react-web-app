@@ -1,12 +1,11 @@
 import React from 'react';
 
 import Layout from './components/Layout/Layout';
-import Footer from './containers/Footer/Footer';
 import Header from './containers/Header/Header';
 import Products from './containers/Products/Products';
 import Info from './components/Info/Info';
 import Landing from './containers/Landing/Landing';
-import FooterTop from './components/FooterTop/Footer';
+import Footer from './components/Footer/Footer';
 
 import './App.scss';
 
@@ -19,7 +18,6 @@ function App() {
         <Products />
         <Info />
       </Layout>
-      <FooterTop />
       <Footer />
     </div>
   );

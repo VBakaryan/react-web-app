@@ -1,15 +1,18 @@
 .app-product {
     width:256px;
+
     &__img{
         width: 100%;
         border-radius: 15px;
         overflow: hidden;
         position: relative;
     }
+
     &__img img{
         width: 100%;
         transition: transform .4s ease-in-out;
     }
+
     &__hover{
         transition: bottom .2s;
         position: absolute;
@@ -26,21 +29,26 @@
         justify-content: space-between
 
     }
+
     &__img:hover img{
         transform: scale(1.3);
     }
+
     &__img:hover &__hover{
         bottom: 0;
     }
+
     &__hover p{
         color: #fff;
         font-size: 20px;
         font-weight: 700;
         margin-right: 12px;
     }
+
     &__hover span{
         margin-right: 12px;
     }
+    
     & h1{
         font-size: 20px;
         color: #333;
