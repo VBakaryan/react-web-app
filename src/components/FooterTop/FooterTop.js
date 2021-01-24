@@ -7,10 +7,10 @@ import "./FooterTop.scss"
 
 function FooterTop(){
     return(
-        <div class="app-footer-top">
-            <div class="app-footer-top__left">
+        <div className="app-footer-top">
+            <div className="app-footer-top__left">
                 <FooterTopLogo />
-                <p class="app-footer-top__text">
+                <p className="app-footer-top__text">
                     THINK OUT OF THE BOXY
                 </p>
             </div>
