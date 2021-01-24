@@ -1,0 +1,36 @@
+.app-footer-top{
+    background-image:url("../../assets/footer/footer.png") ;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    .app-footer__top-column__left-column__text-content{
+        padding: 15px 0 0 24px;
+        font-size: 32px;
+        text-transform: uppercase;
+    }
+}
+.app-button {
+    border-radius: 34px;
+    color: #333;
+    border: 1px solid transparent;  
+}
+.app-button--primary{
+    text-align: center;
+
+}
+.app-button--secondary{
+    background: #d9cef2;
+}
+.app-footer__top-column__button{
+    font-size: 20px;
+    padding: 16px 23px;
+   
+}
+.app-footer-left {
+	display: flex;
+	align-items: center;
+}

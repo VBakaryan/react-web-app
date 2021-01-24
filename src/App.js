@@ -8,6 +8,8 @@ import Info from './components/Info/Info';
 import Landing from './containers/Landing/Landing';
 
 import './App.scss';
+import FooterTop from './components/FooterTop/Footer';
+
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Products />
         <Info />
       </Layout>
+      <FooterTop />
+     
       <Footer />
     </div>
   );
