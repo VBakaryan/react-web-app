@@ -1,49 +1,45 @@
-.app-landing{
-  height: 750px;
-}
+.app-landing {
+    height: 750px;
+    &__img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
 
-.app-landing--img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 0;
-}
+    &__main-block {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        margin-top: 120px;
 
-.app-landing-text-main{
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  margin-top: 120px;
-}
+        &__text {
+            color: #333;
+            font-weight: 400;
+            font-family: "Mardoto-Regular", Fallback, sans-serif;
+            text-align: right;
+            font-size: 32px;
+            line-height: 40px;
+        }
 
-
-.app-landing--text {
-  color: #333;
-  font-weight: 400;
-  font-family: "Mardoto-Regular", Fallback, sans-serif;
-  text-align: right;
-  font-size: 32px;
-  line-height: 40px;
-}
-
-
-.app-landing--btn {
-  font-size: 20px;
-  letter-spacing: 2.5px;
-  margin-top: 40px;
-  padding: 16px 44px;
-  border-radius: 48px;
-  background-color: #ff8a65;
-  color: #333;
-  border: 1px solid transparent;
-  text-transform: none;
-  line-height: normal;
-  margin-left: 300px;
-}
-
-.app-landing--btn:hover {
-  background-color: #ff7a50;
+        &__btn {
+            font-size: 20px;
+            letter-spacing: 2.5px;
+            margin-top: 40px;
+            padding: 16px 44px;
+            border-radius: 48px;
+            background-color: #ff8a65;
+            color: #333;
+            border: 1px solid transparent;
+            text-transform: none;
+            line-height: normal;
+            margin-left: 300px;
+            &:hover {
+                background-color: #ff7a50;
+            }
+        } 
+    }
 }

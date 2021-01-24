@@ -27,7 +27,7 @@ const Header = () => {
 
     return (
         <div className={`app-header${headerBackround ? ' app-header--scroll' : ''}`}>
-            <div className={`app-header__login${headerBackround ? ' app-logo--scroll' : ''}`}>
+            <div className="app-header__login">
                 <HeaderLogo />
             </div>
             <div className="app-header__right">

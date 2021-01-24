@@ -1,20 +1,22 @@
-import React from 'react'
+import React from 'react';
+
+import FooterTopLogo from "../../assets/Icons/FooterTopLogo";
+import Button from "../../components/Button/Button";
 
 import "./Footer.scss"
-import FooterTopLogo from "../../assets/Icons/FooterTopLogo"
-import FooterButton from "../../assets/Icons/FooterButton"
-
 
 function FooterTop(){
     return(
         <div class="app-footer-top">
-            <div class="app-footer-left">
+            <div class="app-footer-top__left">
                 <FooterTopLogo />
-                <p class="app-footer__top-column__left-column__text-content">
+                <p class="app-footer-top__text">
                     THINK OUT OF THE BOXY
                 </p>
             </div>
-            <FooterButton />
+            <Button className="app-footer-top__btn">
+                Առաջարկ ունես
+            </Button>
         </div>
     ) 
 }

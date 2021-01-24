@@ -3,12 +3,12 @@ import Button from '../Button/Button';
 
 import './Product.scss';
 
-const Product = ( { imgSrc , title, price}) => {
+const Product = ({ imgSrc , title, price}) => {
     return (
-        <div className='product-block'>
-            <div className='product-block-img'>
+        <div className='app-product'>
+            <div className='app-product__img'>
                 <img src={imgSrc}/>
-                <div className='product-block-hover'>
+                <div className='app-product__hover'>
                     <p>{price + ` Դ`}</p>
                     <Button>
                        <span>Գնել</span>
@@ -17,9 +17,8 @@ const Product = ( { imgSrc , title, price}) => {
                 </div>
             </div>
             <h1>{title}</h1>
-            
         </div>
     )
 }
 
-export default Product
+export default Product;

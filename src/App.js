@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import Layout from './components/Layout/Layout';
 import Footer from './containers/Footer/Footer';
@@ -6,14 +6,12 @@ import Header from './containers/Header/Header';
 import Products from './containers/Products/Products';
 import Info from './components/Info/Info';
 import Landing from './containers/Landing/Landing';
-
-import './App.scss';
 import FooterTop from './components/FooterTop/Footer';
 
+import './App.scss';
 
 function App() {
   return (
-   
      <div className="App">
       <Header />
       <Layout>
@@ -22,7 +20,6 @@ function App() {
         <Info />
       </Layout>
       <FooterTop />
-     
       <Footer />
     </div>
   );

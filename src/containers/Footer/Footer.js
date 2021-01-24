@@ -1,26 +1,25 @@
-import React from 'react'
+import React from 'react';
 
-import instagramIcon from '../../assets/Icons/instagram.png'
+import instagramIcon from '../../assets/Icons/instagram.png';
 
-import './Footer.scss'
+import './Footer.scss';
 
 function Footer(){
   return (
     <div className="app-footer">
-     
-        <div className="row">
+        <div className="app-footer__row">
           {/* Column1 */}
-          <div className="col">
+          <div className="app-footer__row__col">
             <h4>Հետադարձ կապ</h4>
-            <ul className="list-unstyled">
+            <ul className="app-footer__row__col__list-unstyled">
               <li>Էլ․ հասցե՝ info@boxy.am</li>
               <li>Հեռ․՝+374 41 05-11-50</li>
             </ul>
           </div>
           {/* Column2 */}
-          <div className="col">
+          <div className="app-footer__row__col">
             <h4>Սպասարկում</h4>
-            <ul className="list-unstyled">
+            <ul className="app-footer__row__col__list-unstyled">
               <li>Հաճախ տրվող հարցեր</li>
               <li>Վերադարձի պայմաններ</li>
               <li>Օգտվելու կանոններ</li>
@@ -28,7 +27,7 @@ function Footer(){
             </ul>
           </div>
           {/* Column3 */}
-          <div className="col">
+          <div className="app-footer__row__col">
             <h4>Գտիր մեզ սոց ցանցերում</h4>
             <div>
             <a href="https://www.facebook.com/boxyyerevan">
@@ -41,7 +40,7 @@ function Footer(){
              </svg>
             </a>
             <a href="instagram.com">
-                <img src={instagramIcon} alt="instagram-icon" className="app-footer--instagram_icon" />
+                <img src={instagramIcon} alt="instagram-icon" className="app-footer__row__col__instagram_icon" />
             </a>
             </div>
             <ul className="list-unstyled">
@@ -52,7 +51,7 @@ function Footer(){
           </div>
         </div>
         <div>
-          <p className="col-sm">
+          <p className="app-footer__col-sm">
             &copy;{new Date().getFullYear()} Boxy։ բոլոր իրավունքները պաշտպանված են։
           </p>
         </div>
@@ -61,4 +60,4 @@ function Footer(){
   );
 }
 
-export default Footer
+export default Footer;

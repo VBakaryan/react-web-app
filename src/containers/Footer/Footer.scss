@@ -5,51 +5,55 @@
 	position: relative;
 	font-family: "Mardoto-Regular",Fallback,sans-serif;
 	padding: 80px;
-}
-.row {
-	display: flex;
-	justify-content: space-between;
-	h4{
-		margin-bottom: 15px;
-		padding: 27px 0 0;
-		font-size: 24px;
-		color: #10202c;
-		font-weight: 600;
-	}
-	li{
-		list-style-type: none;
-		transition:0.5s;
-		display: block;
+	
+	&__row {
+		display: flex;
+		justify-content: space-between;
 
-		&:hover{
-			transform: scale(1.1);
+		h4{
+			margin-bottom: 15px;
+			padding: 27px 0 0;
+			font-size: 24px;
+			color: #10202c;
+			font-weight: 600;
+		}
+
+		li{
+			list-style-type: none;
+			transition:0.5s;
+			display: block;
+	
+			&:hover{
+				transform: scale(1.1);
+			}
+		}
+
+		&__col {
+			font-size: 24px;
+			margin-bottom: 15px;
+			
+			a {
+				margin: 0 16px 0 0;
+				color: #333333;
+			}
+
+			&__list-unstyled {
+				font-size: 20px;
+				color: #10202c;
+				line-height: 32px;
+			}
+
+			&__instagram_icon {
+				width: 30px;
+				height: 30px;
+				margin-left: 5px;
+			}
 		}
 	}
-}
 
-
-.col{
-	font-size: 24px;
-	margin-bottom: 15px;
-	
-	a{
-		margin: 0 16px 0 0;
-		color: #333333;
+	&__col-sm{
+		color: #10202c;
+		font-size: 12px;
 	}
-}
-.list-unstyled{
-	font-size: 20px;
-    color: #10202c;
-    line-height: 32px;
-}
-.col-sm{
-	color: #10202c;
-    font-size: 12px;
-}
-
-.app-footer--instagram_icon {
-	width: 30px;
-	height: 30px;
-	margin-left: 5px;
 }
 

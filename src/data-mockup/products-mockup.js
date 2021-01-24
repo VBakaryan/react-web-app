@@ -1,7 +1,5 @@
-import React from 'react'
-
-import BlockImg1 from '../assets/products/premium.67475998.png'
-import BlockImg2 from '../assets/products/regular-plus.0fcb7d0c.png'
+import BlockImg1 from '../assets/products/premium.67475998.png';
+import BlockImg2 from '../assets/products/regular-plus.0fcb7d0c.png';
 
 const productsData = [
     {
@@ -30,4 +28,4 @@ const productsData = [
     },
 ]
 
-export default productsData
+export default productsData;
